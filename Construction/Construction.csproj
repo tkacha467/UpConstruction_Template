@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\alt-services.jpg" />
@@ -192,20 +193,44 @@
     <Content Include="assets\vendor\purecounter\purecounter_vanilla.js" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="Blog.aspx" />
     <Content Include="forms\contact.php" />
     <Content Include="forms\quote.php" />
     <Content Include="forms\Readme.txt" />
     <Content Include="index.aspx" />
+    <Content Include="Projects.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="Services.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.aspx.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects.aspx.designer.cs">
+      <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
@@ -214,6 +239,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
