@@ -58,21 +58,25 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
+                    <asp:Label ID="Label1" runat="server" Text="Enter Name :"></asp:Label>
                  <%-- <input type="text" name="name" class="form-control" placeholder="Your Name" required="">--%>
                     <asp:TextBox ID="TextBox1" type="text" name="name" class="form-control" placeholder="Your Name" required="" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="col-md-6 ">
+                    <asp:Label ID="Label2" runat="server" Text="Enter Email :"></asp:Label>
                  <%-- <input type="email" class="form-control" name="email" placeholder="Your Email" required="">--%>
                     <asp:TextBox ID="TextBox2" type="email" class="form-control" name="email" placeholder="Your Email" required="" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="col-md-12">
+                    <asp:Label ID="Label3" runat="server" Text="Subject :"></asp:Label>
                  <%-- <input type="text" class="form-control" name="subject" placeholder="Subject" required="">--%>
                     <asp:TextBox ID="TextBox3" type="text" class="form-control" name="subject" placeholder="Subject" required="" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="col-md-12">
+                    <asp:Label ID="Label4" runat="server" Text="Massage :"></asp:Label>
                   <%--<textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>--%>
                     <textarea lass="form-control" name="message" rows="5" placeholder="Message" required="" id="TextArea1" cols="73" rows="10"></textarea>
                 </div>
@@ -84,7 +88,7 @@
 
                 <%--  <button type="submit">Registration</button>--%>
                    
-                   <asp:Button ID="Button2" type="submit" runat="server" Text="Registration" Style="display: inline-block; background-color: #ffc107; color: #ffffff; font-size: 16px; font-weight: bold; padding: 12px 30px; border: none; border-radius: 30px; cursor: pointer; text-align: center; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);" />
+                   <asp:Button ID="Button2" type="submit" runat="server" Text="Registration" Style="display: inline-block; background-color: #ffc107; color: #ffffff; font-size: 16px; font-weight: bold; padding: 12px 30px; border: none; border-radius: 30px; cursor: pointer; text-align: center; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);" OnClick="Button2_Click" />
 
 
                 </div>
