@@ -66,6 +66,7 @@
                                <%-- </li>--%>
                                 <%--<li><a href="contact.html">contact</a></li>--%>
                                   <li><a href="Registration.aspx">Registration</a></li>
+                                <li><a href="Product.aspx">Product</a></li>
                             </ul>
                             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                         </nav>

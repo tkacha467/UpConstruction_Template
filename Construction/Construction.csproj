@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\Product_database.mdf" />
+    <Content Include="App_Data\Product_database_log.ldf">
+      <DependentUpon>Product_database.mdf</DependentUpon>
+    </Content>
     <Content Include="assets\css\main.css" />
     <Content Include="assets\img\about.jpg" />
     <Content Include="assets\img\alt-services.jpg" />
@@ -198,6 +202,7 @@
     <Content Include="forms\quote.php" />
     <Content Include="forms\Readme.txt" />
     <Content Include="index.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="Projects.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Services.aspx" />
@@ -224,6 +229,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
@@ -301,6 +313,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
